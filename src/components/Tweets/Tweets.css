@@ -1,0 +1,113 @@
+.post {
+  background-color: #343946;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.posts-page{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.user-logo-block img {
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  position: absolute;
+}
+
+.content-img-block{
+  width: 100%;
+  /* max-height: 500px; */
+}
+
+.content-img-block img {
+  width: 100%;
+}
+
+.user-logo-block img,
+.content-img-block img {
+  border-radius: 30px;
+}
+
+.user-logo-block,
+.post-info-block,
+.text-block,
+.content-img-block,
+.actions-block,
+.post-info,
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-info-block {
+  color: white;
+  flex-direction: column;
+  padding-left: 75px;
+}
+
+.text-block {
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.text-block span {
+  color: rgb(163, 163, 163);
+  font-size: 0.95em;
+}
+
+.post-info {
+  align-items: center;
+  height: auto;
+}
+.post-info h4 {
+  margin: 0;
+}
+
+.post-content p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+.post-info img {
+  margin: 0 5px;
+}
+
+
+.arrow-icon {
+  position: absolute;
+  right: 10px;
+}
+
+.actions-block {
+  margin-top: 15px;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.action {
+  width: 25%;
+  color: rgb(163, 163, 163);
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.action img {
+  float: left;
+  margin-right: 5px;
+}
+
+.posts-page input,
+.posts-page select,
+.posts-page button {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 15px;
+  height: 40px;
+}

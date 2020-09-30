@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { HashRouter, Redirect, Route } from "react-router-dom";
+import "./App.css";
+import AddTweet from "./components/AddTweet/AddTweet";
+import AddUser from "./components/AddUsers/AddUser";
+import Navbar from "./components/Navbar/Navbar";
+import Tweets from "./components/Tweets/Tweets";
+import Users from "./components/Users/Users";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Posts /> */}
+      <HashRouter>
+        <Navbar />
+        <div className='content'>
+          <Route path="/" exact>
+            <Redirect to="/users" />
+          </Route>
+          <Route path="/users" component={Users} />
+          <Route path="/addUser" component={AddUser} />
+          <Route path="/tweets" component={Tweets} />
+          <Route path="/addTweet" component={AddTweet} />
+        </div>
+      </HashRouter>
     </div>
   );
 }

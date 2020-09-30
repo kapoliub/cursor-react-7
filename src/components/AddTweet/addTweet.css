@@ -1,0 +1,46 @@
+.add-tweet-container{
+    width: 100%;
+}
+
+.form-wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper label{
+    width: 100%;
+    padding: 10px;
+    color: rgb(83, 83, 83);
+}
+
+.form-wrapper input, .form-wrapper textarea,.form-wrapper select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-wrapper textarea {
+    resize: vertical;
+}
+
+.form-wrapper button{
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.form-wrapper button:hover{
+    background: rgb(226, 226, 226);
+}
+.form-wrapper button:active{
+    background: rgb(202, 202, 202);
+}
