@@ -66,7 +66,7 @@ const AddUser = (props) => {
 
 const mapDispatch = (dispatch) => ({
   createNewUser(name, nickname, url) {
-    Axios.post("http://domer.tech:9999/users/", {
+    Axios.post("https://domer.tech:9999/users/", {
       name: name,
       username: `@${nickname}`,
       avatar: url,

@@ -17,7 +17,7 @@ const mapState = (state) => {
 
 const mapDispatch = (dispatch) => ({
     async getUsers() {
-      const users = await Axios.get("http://domer.tech:9999/users");
+      const users = await Axios.get("https://domer.tech:9999/users");
       dispatch({
         type: "UPDATE_USERS_LIST",
         users: users.data.data,

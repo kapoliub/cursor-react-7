@@ -76,7 +76,7 @@ const mapState = (state) => {
 
 const mapDispatch = (dispatch) => ({
   createNewUser(userId, content, image) {
-    Axios.post("http://domer.tech:9999/tweets/", {
+    Axios.post("https://domer.tech:9999/tweets/", {
       userId,
       content,
       image,
